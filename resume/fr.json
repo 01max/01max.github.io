@@ -38,7 +38,8 @@
         "Développement d'un outils de gestion des catalogues clientèles d'un groupe de plusieurs entreprises de courtage en assurance; Mise en place d'une API, d'exports journaliers à destination des différents CRM déjà existants dans le groupe, d'un identity provider pour le SSO clientèle (Rails 5 - 18 mois)",
         "Développement d'un portail culturel national numérique et papier; Import depuis plusieurs plateformes de billetterie sous différents formats, exports au format odt destiné à l'impression de la version papier, système de modération complet des données proposées par les utilisateurs (Rails 4 - 8 mois)",
         "Accompagnement technique dans les réunions de conception et les différentes interractions avec la clientèle.",
-        "Ruby / Rails 4 & 5 / PostgreSQL / Sass"
+        "Ruby / Rails 4 & 5 / PostgreSQL / Sass",
+        "GitHub / Sentry"
       ]
     },
     {
@@ -57,7 +58,8 @@
       "highlights": [
         "Développement de l'outil, à destination des marques clientes, permettant l'acccès, la gestion et la personnalisation des différents outils et widgets proposés par Clic2Buy.",
         "Développement de l'API permettant aux différents outils de l'entreprise d'accéder aux informations renseignées par le client.",
-        "Ruby / Rails 3 / PostgreSQL / Less"
+        "Ruby / Rails 3 / PostgreSQL / Less",
+        "GitLab / CodeShip / Gemnasium"
       ]
     },
     {
