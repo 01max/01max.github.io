@@ -5,7 +5,7 @@
     "picture": "",
     "email": "m.louguet@gmail.com",
     "phone": "06.31.31.12.77",
-    "website": "https://wwW.0max.io",
+    "website": "https://www.0max.io",
     "summary": "Développeur dans le monde du web depuis plus de 7 ans, je suis à la recherche de projets stimulants dans une équipe à taille humaine.",
     "location": {
       "address": "227 rue Nationale",
@@ -45,8 +45,11 @@
     {
       "company": "Freelance",
       "position": "Developer",
+      "website": "",
       "startDate": "2015-10-01",
-      "endDate": "2016-05-01"
+      "endDate": "2016-05-01",
+      "summary": "",
+      "highlights": []
     },
     {
       "company": "Clic2Buy",
@@ -69,6 +72,20 @@
       "startDate": "2012-04-01",
       "endDate": "2013-08-01",
       "summary": "Neoweb est une agence digitale créée en 2004 et basée à Lille sur le pôle Euratechnologies. Du porteur de projet au grand compte, nous accompagnons nos clients dans leurs projets de création de site web, d'ergonomie, de webdesign et de développement mais aussi en leur proposant un accompagnement stratégique.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "CoderDojo",
+      "position": "Teacher",
+      "website": "https://coderdojo.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Global movement of free coding clubs for young people.",
+      "highlights": [
+        "Awarded 'Teacher of the Month'"
+      ]
     }
   ],
   "education": [
@@ -77,9 +94,13 @@
       "area": "Information Technology",
       "studyType": "Master 2",
       "startDate": "2007-09-01",
-      "endDate": "2013-09-01"
+      "endDate": "2013-09-01",
+      "gpa": "",
+      "courses": []
     }
   ],
+  "awards": [],
+  "publications": [],
   "skills": [
     {
       "name": "Backend Web",
@@ -121,8 +142,7 @@
     },
     {
       "name": "Cinéma",
-      "keywords": [
-      ]
+      "keywords": []
     }
   ],
   "references": [
