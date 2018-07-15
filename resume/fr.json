@@ -1,0 +1,132 @@
+{
+  "basics": {
+    "name": "Maxime Louguet",
+    "label": "Software Engineer",
+    "picture": "",
+    "email": "m.louguet@gmail.com",
+    "phone": "06.31.31.12.77",
+    "website": "https://wwW.0max.io",
+    "summary": "Développeur dans le monde du web depuis plus de 7 ans, je suis à la recherche de projets stimulants dans une équipe à taille humaine.",
+    "location": {
+      "address": "227 rue Nationale",
+      "postalCode": "59800",
+      "city": "Lille",
+      "countryCode": "FR",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "maxime_louguet",
+        "url": "https://twitter.com/maxime_louguet"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "maximelouguet",
+        "url": "https://www.linkedin.com/in/maximelouguet"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Neoweb",
+      "position": "Lead Developer",
+      "website": "https://www.neoweb.fr",
+      "startDate": "2016-05-01",
+      "summary": "Neoweb est une agence digitale créée en 2004 et basée à Lille sur le pôle Euratechnologies. Du porteur de projet au grand compte, nous accompagnons nos clients dans leurs projets de création de site web, d'ergonomie, de webdesign et de développement mais aussi en leur proposant un accompagnement stratégique.",
+      "highlights": [
+        "Développement d'un outils de gestion des catalogues clientèles d'un groupe de plusieurs entreprises de courtage en assurance; Mise en place d'une API, d'exports journaliers à destination des différents CRM déjà existants dans le groupe, d'un identity provider pour le SSO clientèle (Rails 5 - 18 mois)",
+        "Développement d'un portail culturel national numérique et papier; Import depuis plusieurs plateformes de billetterie sous différents formats, exports au format odt destiné à l'impression de la version papier, système de modération complet des données proposées par les utilisateurs (Rails 4 - 8 mois)",
+        "Accompagnement technique dans les réunions de conception et les différentes interractions avec la clientèle.",
+        "Ruby / Rails 4 & 5 / PostgreSQL / Sass"
+      ]
+    },
+    {
+      "company": "Freelance",
+      "position": "Developer",
+      "startDate": "2015-10-01",
+      "endDate": "2016-05-01"
+    },
+    {
+      "company": "Clic2Buy",
+      "position": "Software Engineer",
+      "website": "https://www.clic2buy.com",
+      "startDate": "2013-10-01",
+      "endDate": "2015-10-01",
+      "summary": "Clic2Buy est une solution de transformation des supports de communication (papier, web, tv..) en vecteurs de ventes directs par le développement d'outils \"where to buy\" & \"buy it now\".",
+      "highlights": [
+        "Développement de l'outil, à destination des marques clientes, permettant l'acccès, la gestion et la personnalisation des différents outils et widgets proposés par Clic2Buy.",
+        "Développement de l'API permettant aux différents outils de l'entreprise d'accéder aux informations renseignées par le client.",
+        "Ruby / Rails 3 / PostgreSQL / Less"
+      ]
+    },
+    {
+      "company": "Neoweb",
+      "position": "Web Developer",
+      "website": "https://www.neoweb.fr",
+      "startDate": "2012-04-01",
+      "endDate": "2013-08-01",
+      "summary": "Neoweb est une agence digitale créée en 2004 et basée à Lille sur le pôle Euratechnologies. Du porteur de projet au grand compte, nous accompagnons nos clients dans leurs projets de création de site web, d'ergonomie, de webdesign et de développement mais aussi en leur proposant un accompagnement stratégique.",
+    }
+  ],
+  "education": [
+    {
+      "institution": "SUPINFO",
+      "area": "Information Technology",
+      "studyType": "Master 2",
+      "startDate": "2007-09-01",
+      "endDate": "2013-09-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Backend Web",
+      "level": "Maîtrise complète",
+      "keywords": [
+        "Ruby on Rails",
+        "PostgreSQL",
+        "RSpec"
+      ]
+    },
+    {
+      "name": "Frontend Web",
+      "level": "Maîtrise",
+      "keywords": [
+        "CoffeeScript",
+        "Sass",
+        "Haml"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Anglais",
+      "fluency": "Compétence professionnelle complète (TOEIC 940 - 2012)"
+    },
+    {
+      "language": "Espagnol",
+      "fluency": "Notions"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Activités d'extérieur",
+      "keywords": [
+        "Randonnée",
+        "Cyclisme",
+        "Escalade"
+      ]
+    },
+    {
+      "name": "Cinéma",
+      "keywords": [
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Geoffrey Antoine (Clic2Buy, 2014)",
+      "reference": "Maxime worked mainly on the Back office in Ruby On Rails. Despite he was new in the Ruby community, he learned quickly and was able to develop a product of excellent quality respecting conventions and best practices. He's also a thinker and help the company to go forward. Finally he's a very cool coworker and I'll work with him without any hesitation."
+    }
+  ]
+}
