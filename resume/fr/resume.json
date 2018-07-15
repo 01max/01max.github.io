@@ -4,8 +4,6 @@
     "label": "Software Engineer",
     "picture": "",
     "email": "m.louguet@gmail.com",
-    "phone": "06.31.31.12.77",
-    "website": "https://www.0max.io",
     "summary": "Développeur dans le monde du web depuis plus de 7 ans, je suis à la recherche de projets stimulants dans une équipe à taille humaine.",
     "location": {
       "address": "227 rue Nationale",
@@ -35,9 +33,9 @@
       "startDate": "2016-05-01",
       "summary": "Neoweb est une agence digitale créée en 2004 et basée à Lille sur le pôle Euratechnologies. Du porteur de projet au grand compte, nous accompagnons nos clients dans leurs projets de création de site web, d'ergonomie, de webdesign et de développement mais aussi en leur proposant un accompagnement stratégique.",
       "highlights": [
-        "Développement d'un outils de gestion des catalogues clientèles d'un groupe de plusieurs entreprises de courtage en assurance; Mise en place d'une API, d'exports journaliers à destination des différents CRM déjà existants dans le groupe, d'un identity provider pour le SSO clientèle (Rails 5 - 18 mois)",
-        "Développement d'un portail culturel national numérique et papier; Import depuis plusieurs plateformes de billetterie sous différents formats, exports au format odt destiné à l'impression de la version papier, système de modération complet des données proposées par les utilisateurs (Rails 4 - 8 mois)",
-        "Accompagnement technique dans les réunions de conception et les différentes interractions avec la clientèle.",
+        "Développement d'un outils de gestion de catalogues clientèles d'un groupe de courtage en assurance; Mise en place d'une API, d'exports journaliers à destination des différents CRM déjà existants dans le groupe, d'un identity provider pour le SSO clientèle (Rails 5 - 18 mois)",
+        "Développement d'un portail culturel national numérique et papier; Import depuis plusieurs plateformes de billetterie sous différents formats, exports au format odt destiné à l'impression de la version papier, système de modération complet des données proposées par les utilisateurs (Rails 4 - 10 mois)",
+        "Accompagnement technique dans les réunions de conception et les différentes interractions avec la clientèle",
         "Ruby / Rails 4 & 5 / PostgreSQL / Sass",
         "GitHub / Sentry"
       ]
@@ -49,7 +47,11 @@
       "startDate": "2015-10-01",
       "endDate": "2016-05-01",
       "summary": "",
-      "highlights": []
+      "highlights": [
+        "Développement d'un site de partage d'annonces immobilières pour les professionnels (Rails 4 - 4 mois)",
+        "Développement d'un portail culturel national numérique et papier; Import depuis plusieurs plateformes de billetterie sous différents formats, exports au format odt destiné à l'impression de la version papier, système de modération complet des données proposées par les utilisateurs (Rails 4 - 2 mois)",
+        "Ruby / Rails 4 / PostgreSQL / Sass"
+      ]
     },
     {
       "company": "Clic2Buy",
@@ -72,22 +74,13 @@
       "startDate": "2012-04-01",
       "endDate": "2013-08-01",
       "summary": "Neoweb est une agence digitale créée en 2004 et basée à Lille sur le pôle Euratechnologies. Du porteur de projet au grand compte, nous accompagnons nos clients dans leurs projets de création de site web, d'ergonomie, de webdesign et de développement mais aussi en leur proposant un accompagnement stratégique.",
-      "highlights": []
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "https://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
       "highlights": [
-        "Awarded 'Teacher of the Month'"
+        "Développement d'un site évenementiel pour les portes ouvertes des ateliers d'artistes de la région Nord-Pas-de-Calais utilisant l'API Foursquare (Php 5 - 5 mois)",
+        "Php 5 / Rails 3 / MySQL / Less"
       ]
     }
   ],
+  "volunteer": [],
   "education": [
     {
       "institution": "SUPINFO",
@@ -95,6 +88,13 @@
       "studyType": "Master 2",
       "startDate": "2007-09-01",
       "endDate": "2013-09-01",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "BAC S",
+      "area": "Spé Maths - Mention AB",
+      "endDate": "2007-07-30",
       "gpa": "",
       "courses": []
     }
@@ -145,10 +145,5 @@
       "keywords": []
     }
   ],
-  "references": [
-    {
-      "name": "Geoffrey Antoine (Clic2Buy, 2014)",
-      "reference": "Maxime worked mainly on the Back office in Ruby On Rails. Despite he was new in the Ruby community, he learned quickly and was able to develop a product of excellent quality respecting conventions and best practices. He's also a thinker and help the company to go forward. Finally he's a very cool coworker and I'll work with him without any hesitation."
-    }
-  ]
+  "references": []
 }
