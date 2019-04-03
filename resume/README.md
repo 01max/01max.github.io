@@ -3,5 +3,5 @@
 Use `jsonresume.org`
 
 ```bash
-resume export resume.html
+resume export index.html
 ```
