@@ -2,4 +2,6 @@
 
 Use `jsonresume.org`
 
-$ resume export resume.html
+```bash
+resume export resume.html
+```

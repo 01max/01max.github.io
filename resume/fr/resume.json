@@ -4,10 +4,9 @@
     "label": "Software Engineer",
     "picture": "",
     "email": "m.louguet@gmail.com",
-    "summary": "Développeur dans le monde du web depuis plus de 7 ans, je suis à la recherche de projets stimulants dans une équipe à taille humaine.",
+    "summary": "Développeur dans le monde du web depuis plus de 8 ans, je suis à la recherche de projets stimulants dans une équipe à taille humaine.",
     "location": {
-      "address": "227 rue Nationale",
-      "postalCode": "59800",
+      "postalCode": "59000",
       "city": "Lille",
       "countryCode": "FR",
       "region": ""
@@ -82,7 +81,7 @@
       "area": "Information Technology",
       "studyType": "Master 2",
       "startDate": "2007-09-01",
-      "endDate": "2013-09-01",
+      "endDate": "2012-10-01",
       "gpa": "",
       "courses": []
     },
