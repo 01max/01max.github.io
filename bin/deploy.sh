@@ -2,7 +2,7 @@
 
 read -p "Deployment commit message : " commit_message
 
-./build.sh
+./bin/build.sh
 
 git add .
 git commit -am "$commit_message"
