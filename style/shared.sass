@@ -1,7 +1,23 @@
 @import ./fonts/fonts.css
+@import ./bootstrap.min.css
+
+$dark-blue: #142850
+$blued-white: #e8f1f5
+$base-yellow: #ffde25
+$warm-yellow: #ffd400
 
 body
   font-family: 'Poppins', sans-serif
+  color: $blued-white
+  background: $dark-blue
+
+a
+  color: $base-yellow
+  &:hover
+    color: $warm-yellow
+
+h1, h2
+  font-weight: bold
 
 .full-page-container
   padding-left: 5%

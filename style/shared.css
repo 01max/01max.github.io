@@ -1,6 +1,17 @@
 @import url(./fonts/fonts.css);
+@import url(./bootstrap.min.css);
 body {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  color: #e8f1f5;
+  background: #142850; }
+
+a {
+  color: #ffde25; }
+  a:hover {
+    color: #ffd400; }
+
+h1, h2 {
+  font-weight: bold; }
 
 .full-page-container {
   padding-left: 5%; }
