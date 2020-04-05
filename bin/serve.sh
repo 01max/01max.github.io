@@ -1,5 +1,5 @@
 echo "Ready"
-fswatch --latency=5 --recursive --exclude="." --include="\.sass" --include="\.haml" . | while read; \
+fswatch --latency=5 --recursive --exclude="." --include="\.sass" --include="\.haml" --include="\.json" . | while read; \
   do \
     echo "Building..."
     ./bin/build.sh

@@ -6,8 +6,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: #e8f1f5;
-  background: #142850;
-  background: radial-gradient(circle, #1f4369 0%, #142850 100%); }
+  background: #142850; }
+  body.full-page {
+    background: radial-gradient(circle, #1f4369 0%, #142850 100%); }
 
 a {
   color: #ffde25; }
@@ -16,5 +17,8 @@ a {
 
 h1, h2 {
   font-weight: bold; }
+
+hr {
+  border-color: #0c7b93; }
 
 /*# sourceMappingURL=shared.css.map */

@@ -1,0 +1,58 @@
+- require 'json'
+- require 'sinatra'
+- language = 'fr'
+- assets_base_path = "../../"
+- bin_base_path = "resume/#{language}"
+- @resume_json = ::JSON.parse(File.read("#{bin_base_path}/resume.json"))
+- @sections_json = ::JSON.parse(File.read("#{bin_base_path}/sections.json"))
+
+!!! 5
+%html
+  %head
+    %title= @resume_json['basics']['name']
+    %meta{ "http-equiv" => "X-UA-Compatible", content: "IE=edge" }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1" }
+
+    %link{ rel: :stylesheet, type: "text/css", href: "#{assets_base_path}style/shared.css" }
+    %link{ rel: :stylesheet, type: "text/css", href: "#{assets_base_path}style/resume.css" }
+
+    %link{ rel: :icon, href: "#{assets_base_path}style/favicon/favicon.ico" }
+    %link{ rel: :icon, href: "#{assets_base_path}style/favicon/favicon-32x32.png", sizes: "32x32" }
+    %link{ rel: :icon, href: "#{assets_base_path}style/favicon/favicon-16x16.png", sizes: "16x16" }
+
+  %body
+    .container
+      .row
+        .col
+          %h1.mt-5= @resume_json['basics']['name']
+          %h2= @resume_json['basics']['label']
+
+        .col
+          .row.h-100.align-items-end
+            .col.text-right
+              %img.mr-3.rounded-circle.profile-picture{ src: "#{assets_base_path}#{@resume_json['basics']['picture']}" }
+
+      .row.mt-3
+        .col.text-right.icons
+          - @resume_json['basics']['profiles'].each do |profile|
+            %a{ href: profile['url'], target: :_blank }
+              %img{ src: "#{assets_base_path}style/vectors/#{profile['network'].downcase}.svg", alt: profile['network'] }
+
+          %a{ href: "mailto:#{@resume_json['basics']['email']}" }
+            %img{ src: "#{assets_base_path}style/vectors/email.svg", alt: "Email" }
+
+      .row
+        .col
+          %hr
+
+      .row.justify-content-center
+        .col
+          %p.lead.mb-0= @resume_json['basics']['summary']
+
+      .row
+        .col
+          %hr
+
+      .row.mt-5.align-items-center
+        .col-10
+          %h3= @sections_json['work']

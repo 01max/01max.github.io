@@ -1,0 +1,10 @@
+.profile-picture {
+  height: 120px; }
+
+.icons img {
+  max-height: 1.6rem;
+  max-width: 1.6rem; }
+.icons a:hover {
+  text-decoration: none; }
+
+/*# sourceMappingURL=resume.css.map */

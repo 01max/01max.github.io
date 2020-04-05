@@ -2,9 +2,9 @@
   "basics": {
     "name": "Maxime Louguet",
     "label": "Software Engineer",
-    "picture": "",
+    "picture": "resume/profile.jpg",
     "email": "m.louguet@gmail.com",
-    "summary": "Développeur dans le monde du web depuis plus de 8 ans, je suis à la recherche de projets stimulants dans une équipe à taille humaine.",
+    "summary": "Développeur dans le monde du web depuis plus de 9 ans, je suis à la recherche de projets stimulants dans une équipe à taille humaine.",
     "location": {
       "postalCode": "59000",
       "city": "Lille",
@@ -12,6 +12,11 @@
       "region": ""
     },
     "profiles": [
+      {
+        "network": "Github",
+        "username": "01max",
+        "url": "https://github.com/01max"
+      },
       {
         "network": "LinkedIn",
         "username": "maximelouguet",

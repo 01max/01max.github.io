@@ -1,3 +1,5 @@
+- root_path = ""
+
 !!! 5
 %html
   %head
@@ -5,13 +7,13 @@
     %meta{ "http-equiv" => "X-UA-Compatible", content: "IE=edge" }
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1" }
 
-    %link{ rel: :stylesheet, type: "text/css", href: "style/shared.css" }
+    %link{ rel: :stylesheet, type: "text/css", href: "#{root_path}style/shared.css" }
 
-    %link{ rel: :icon, href: "style/favicon/favicon.ico" }
-    %link{ rel: :icon, href: "style/favicon/favicon-32x32.png", sizes: "32x32" }
-    %link{ rel: :icon, href: "style/favicon/favicon-16x16.png", sizes: "16x16" }
+    %link{ rel: :icon, href: "#{root_path}style/favicon/favicon.ico" }
+    %link{ rel: :icon, href: "#{root_path}style/favicon/favicon-32x32.png", sizes: "32x32" }
+    %link{ rel: :icon, href: "#{root_path}style/favicon/favicon-16x16.png", sizes: "16x16" }
 
-  %body.h-100
+  %body.full-page.h-100
     .container.h-100
       .row.h-100.align-items-center
         .col
