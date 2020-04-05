@@ -27,8 +27,8 @@
       "startDate": "2019-11-01",
       "summary": "GoCater est la plateforme Française de commandes traiteur en entreprise en ligne (du groupe ezCater)",
       "highlights": [
-        "Senior (et Lead sur la partie Ruby) dans une équipe de technique composées de 6 développeurs, 2 engineering managers et 2 product manager, j'ai rejoint GoCater dans l'optique d'accompagner l'équipe vers une transition d'un monolithe Node (+ Angular / React) vers une architecture service Ruby (+ React).",
-        "Remplacement du moteur de recherche (sous forme de service) en entrée du tunnel de conversion (recherche des prestataires disponible pour l'adresse, le jour et l'heure de l'événements et pour les restrictions / préférences alimentaires des convives). Temps de réponse du moteur divisé par ~2 en moyenne, augmentation du taux de conversion.",
+        "Senior (et Lead sur la partie Ruby) dans une équipe technique composée de 6 développeurs, 2 engineering managers et 2 product manager, j'ai rejoint GoCater dans l'optique d'accompagner l'équipe vers une transition d'un monolithe Node (+ Angular / React) vers une architecture service Ruby (+ React).",
+        "Remplacement du moteur de recherche (sous forme de service) en entrée du tunnel de conversion (recherche des prestataires disponibles pour l'adresse, le jour et l'heure de l'événement et pour les restrictions / préférences alimentaires des convives). Temps de réponse du moteur divisé par ~2 en moyenne, augmentation du taux de conversion.",
         "Ruby / Rails 5 / PostgreSQL / ElasticSearch / Sidekiq / Kafka",
         "GitHub / Sentry / Jenkins",
         "Poste anglophone au sein d'une équipe internationale"
