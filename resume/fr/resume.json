@@ -21,10 +21,25 @@
   },
   "work": [
     {
+      "company": "GoCater",
+      "position": "Senior Software Engineer",
+      "website": "https://www.gocater.fr",
+      "startDate": "2019-11-01",
+      "summary": "GoCater est la plateforme Française de commandes traiteur en entreprise en ligne (du groupe ezCater)",
+      "highlights": [
+        "Senior (et Lead sur la partie Ruby) dans une équipe de technique composées de 6 développeurs, 2 engineering managers et 2 product manager, j'ai rejoint GoCater dans l'optique d'accompagner l'équipe vers une transition d'un monolithe Node (+ Angular / React) vers une architecture service Ruby (+ React).",
+        "Remplacement du moteur de recherche (sous forme de service) en entrée du tunnel de conversion (recherche des prestataires disponible pour l'adresse, le jour et l'heure de l'événements et pour les restrictions / préférences alimentaires des convives). Temps de réponse du moteur divisé par ~2 en moyenne, augmentation du taux de conversion.",
+        "Ruby / Rails 5 / PostgreSQL / ElasticSearch / Sidekiq / Kafka",
+        "GitHub / Sentry / Jenkins",
+        "Poste anglophone au sein d'une équipe internationale"
+      ]
+    },
+    {
       "company": "Neoweb",
       "position": "Lead Developer",
       "website": "https://www.neoweb.fr",
       "startDate": "2016-05-01",
+      "endDate": "2019-10-30",
       "summary": "Neoweb est une agence digitale créée en 2004 et basée à Lille sur le pôle Euratechnologies. Du porteur de projet au grand compte, nous accompagnons nos clients dans leurs projets de création de site web, d'ergonomie, de webdesign et de développement mais aussi en leur proposant un accompagnement stratégique.",
       "highlights": [
         "Développement d'un outils de gestion de catalogues clientèles d'un groupe de courtage en assurance; Mise en place d'une API, d'exports journaliers à destination des différents CRM déjà existants dans le groupe, d'un identity provider pour le SSO clientèle (Rails 5 - 18 mois)",
@@ -62,7 +77,7 @@
       ]
     },
     {
-      "company": "Neoweb",
+      "company": "Neoweb (& Findtastic)",
       "position": "Web Developer",
       "website": "https://www.neoweb.fr",
       "startDate": "2012-04-01",
@@ -70,6 +85,7 @@
       "summary": "Neoweb est une agence digitale créée en 2004 et basée à Lille sur le pôle Euratechnologies. Du porteur de projet au grand compte, nous accompagnons nos clients dans leurs projets de création de site web, d'ergonomie, de webdesign et de développement mais aussi en leur proposant un accompagnement stratégique.",
       "highlights": [
         "Développement d'un site évenementiel pour les portes ouvertes des ateliers d'artistes de la région Nord-Pas-de-Calais utilisant l'API Foursquare (Php 5 - 5 mois)",
+        "Développement d'un projet interne de portail multiplateforme dédié aux transactions immobilières",
         "Php 5 / Rails 3 / MySQL / Less"
       ]
     }
@@ -97,17 +113,18 @@
   "publications": [],
   "skills": [
     {
-      "name": "Backend Web",
-      "level": "Maîtrise complète",
+      "name": "Backend",
       "keywords": [
         "Ruby on Rails",
         "PostgreSQL",
+        "Elasticsearch",
+        "Sidekiq",
+        "Kafka",
         "RSpec"
       ]
     },
     {
-      "name": "Frontend Web",
-      "level": "Maîtrise",
+      "name": "Frontend",
       "keywords": [
         "CoffeeScript",
         "Sass",
@@ -131,7 +148,8 @@
       "keywords": [
         "Randonnée",
         "Cyclisme",
-        "Escalade"
+        "Escalade",
+        "Tir à l'arc"
       ]
     },
     {
