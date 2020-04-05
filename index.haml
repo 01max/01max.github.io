@@ -2,6 +2,9 @@
 %html
   %head
     %title Hi
+    %meta{ "http-equiv" => "X-UA-Compatible", content: "IE=edge" }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1" }
+
     %link{ rel: :stylesheet, type: "text/css", href: "style/shared.css" }
 
     %link{ rel: :icon, href: "style/favicon/favicon.ico" }
@@ -11,12 +14,11 @@
   %body.h-100
     .row.h-100.align-items-center
       .col
-        .pl-5
+        .pl-2.pl-sm-5
           %h1 Hi, I'm Maxime
-          %h2 I have been a Software Engineer for the past 9 years
-          %p
+          %h2.mt-4.mb-4.m-sm-0 I have been a Software Engineer for the past 9 years
+          %p.lead
             While you are here, you can checkout
             %a{ href: 'resume/fr/' } my resume
             and my
             %a{ href: 'https://github.com/01max' } github profile
-
