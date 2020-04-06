@@ -18,11 +18,15 @@ a
   &:hover
     color: $warm-yellow
 
-h1, h2
+h1, h2, h3
   font-weight: bold
 
-hr
-  border-color: $greened-blue
+hr, .border, .border-top, .border-right, .border-bottom, .border-left
+  border-color: $greened-blue !important
+
+@media (max-width: 768px)
+  .border-hide-sm
+    border: none !important
 
 .forced-background
   background: $darker-blue

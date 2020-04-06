@@ -15,12 +15,15 @@ a {
   a:hover {
     color: #ffd400; }
 
-h1, h2 {
+h1, h2, h3 {
   font-weight: bold; }
 
-hr {
-  border-color: #0c7b93; }
+hr, .border, .border-top, .border-right, .border-bottom, .border-left {
+  border-color: #0c7b93 !important; }
 
+@media (max-width: 768px) {
+  .border-hide-sm {
+    border: none !important; } }
 .forced-background {
   background: #142850; }
 
