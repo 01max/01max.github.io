@@ -19,7 +19,18 @@ h1, h2, h3 {
   font-weight: bold; }
 
 hr, .border, .border-top, .border-right, .border-bottom, .border-left {
-  border-color: #0c7b93 !important; }
+  border-color: #1f4369 !important; }
+
+.row.stike-through:after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  top: 24%;
+  border-bottom: 1px solid #0c7b93;
+  z-index: -1; }
+.row.stike-through strong {
+  line-height: 2.2; }
 
 @media (max-width: 768px) {
   .border-hide-sm {

@@ -122,18 +122,23 @@
       "keywords": [
         "Ruby on Rails",
         "PostgreSQL",
+        "RSpec"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
         "Elasticsearch",
         "Sidekiq",
-        "Kafka",
-        "RSpec"
+        "Kafka"
       ]
     },
     {
       "name": "Frontend",
       "keywords": [
-        "CoffeeScript",
+        "Haml",
         "Sass",
-        "Haml"
+        "CoffeeScript"
       ]
     }
   ],

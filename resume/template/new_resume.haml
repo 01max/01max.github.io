@@ -53,12 +53,12 @@
           %p.lead.mb-0= @resume_json['basics']['summary']
 
       .row
-        .col
+        .col.mb-5
           %hr
 
       .row
         .col-12.col-md-8.mb-5.border-right.border-hide-sm
-          .row.mt-5.align-items-center
+          .row.align-items-center
             .col
               %h3= @i18n_json['work']
 
@@ -94,3 +94,19 @@
                   - work_xp['highlights'].each do |work_highlight|
                     %li= work_highlight
 
+
+        .col-12.col-md-4.mb-5
+          .row.align-items-center
+            .col
+              %h3= @i18n_json['skills']
+
+          - @resume_json['skills'].each do |skill_collection|
+            .row.mt-3.ml-1
+              .col
+                %h5= skill_collection['name']
+
+            .row.mt-2.ml-1
+              .col
+                %ul
+                  - skill_collection['keywords'].each do |skill|
+                    %li= skill

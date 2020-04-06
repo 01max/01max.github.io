@@ -22,7 +22,20 @@ h1, h2, h3
   font-weight: bold
 
 hr, .border, .border-top, .border-right, .border-bottom, .border-left
-  border-color: $greened-blue !important
+  border-color: $dark-blue !important
+
+.row.stike-through
+  &:after
+    content: ""
+    position: absolute
+    left: 15px
+    right: 15px
+    top: 24%
+    border-bottom: 1px solid $greened-blue
+    z-index: -1
+
+  strong
+    line-height: 2.2
 
 @media (max-width: 768px)
   .border-hide-sm
