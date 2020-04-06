@@ -30,7 +30,7 @@
       "position": "Senior Software Engineer",
       "website": "https://www.gocater.fr",
       "startDate": "2019-11-01",
-      "summary": "GoCater est la plateforme Française de commandes traiteur en entreprise en ligne (du groupe ezCater)",
+      "summary": "GoCater est la plateforme Française de commandes traiteur en entreprise en ligne (branche européenne du groupe ezCater).",
       "highlights": [
         "Senior (et Lead sur la partie Ruby) dans une équipe technique composée de 6 développeurs, 2 engineering managers et 2 product manager, j'ai rejoint GoCater dans l'optique d'accompagner l'équipe vers une transition d'un monolithe Node (+ Angular / React) vers une architecture service Ruby (+ React).",
         "Remplacement du moteur de recherche (sous forme de service) en entrée du tunnel de conversion (recherche des prestataires disponibles pour l'adresse, le jour et l'heure de l'événement et pour les restrictions / préférences alimentaires des convives). Temps de réponse du moteur divisé par ~2 en moyenne, augmentation du taux de conversion.",
@@ -90,7 +90,7 @@
       "summary": "Neoweb est une agence digitale créée en 2004 et basée à Lille sur le pôle Euratechnologies. Du porteur de projet au grand compte, nous accompagnons nos clients dans leurs projets de création de site web, d'ergonomie, de webdesign et de développement mais aussi en leur proposant un accompagnement stratégique.",
       "highlights": [
         "Développement d'un site évenementiel pour les portes ouvertes des ateliers d'artistes de la région Nord-Pas-de-Calais utilisant l'API Foursquare (Php 5 - 5 mois)",
-        "Développement d'un projet interne de portail multiplateforme dédié aux transactions immobilières",
+        "Développement d'un projet interne de portail multiplateforme dédié aux transactions immobilières (Findtastic)",
         "Php 5 / Rails 3 / MySQL / Less"
       ]
     }

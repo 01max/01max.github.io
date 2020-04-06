@@ -60,7 +60,7 @@
           %h3= @i18n_json['work']
 
       - @resume_json['work'].each do |work_xp|
-        .row.mt-3.mb-5.work-experiences-container
+        .row.mt-3.work-experience-title-container
           .col
             .row.stike-through
               .col
@@ -77,3 +77,17 @@
                 %strong.forced-background.pl-1= full_date
 
             %h5= work_xp['position']
+
+        .row.m-3
+          .col
+            - unless work_xp['summary'].empty?
+              .alert.alt-background.p-2
+                %strong= work_xp['summary']
+
+        .row.mb-5.ml-4.mr-4
+          .col
+            %h5= @i18n_json['highlights']
+            %ul
+              - work_xp['highlights'].each do |work_highlight|
+                %li= work_highlight
+

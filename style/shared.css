@@ -24,6 +24,9 @@ hr {
 .forced-background {
   background: #142850; }
 
+.alt-background {
+  background: #1f4369; }
+
 .vector {
   max-height: 1.6rem;
   max-width: 1.6rem; }
