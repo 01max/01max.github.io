@@ -23,11 +23,13 @@
   %body
     .container
       .row
-        .col
+        .col-12.col-md-8
           %h1.mt-5= @resume_json['basics']['name']
-          %h2= @resume_json['basics']['label']
+          %h2
+            = @resume_json['basics']['label']
+            %img.ruby-icon{ src: "#{assets_base_path}style/vectors/ruby.svg", alt: "Ruby" }
 
-        .col
+        .col.d-none.d-md-block
           .row.h-100.align-items-end
             .col.text-right
               %img.mr-3.rounded-circle.profile-picture{ src: "#{assets_base_path}#{@resume_json['basics']['picture']}" }
