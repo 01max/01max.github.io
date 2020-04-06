@@ -1,8 +1,10 @@
 .profile-picture {
   height: 120px; }
 
-.icons a:hover {
-  text-decoration: none; }
+.icons {
+  width: 120px; }
+  .icons a:hover {
+    text-decoration: none; }
 
 .ruby-icon {
   width: 2rem;

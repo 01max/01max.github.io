@@ -35,13 +35,14 @@
               %img.mr-3.rounded-circle.profile-picture{ src: "#{assets_base_path}#{@resume_json['basics']['picture']}" }
 
       .row.mt-3
-        .col.text-right.icons
-          - @resume_json['basics']['profiles'].each do |profile|
-            %a{ href: profile['url'], target: :_blank }
-              %img.vector{ src: "#{assets_base_path}style/vectors/#{profile['network'].downcase}.svg", alt: profile['network'] }
+        .col.text-right
+          .icons.mr-3.float-right.text-center
+            - @resume_json['basics']['profiles'].each do |profile|
+              %a{ href: profile['url'], target: :_blank }
+                %img.vector{ src: "#{assets_base_path}style/vectors/#{profile['network'].downcase}.svg", alt: profile['network'] }
 
-          %a{ href: "mailto:#{@resume_json['basics']['email']}" }
-            %img.vector{ src: "#{assets_base_path}style/vectors/email.svg", alt: "Email" }
+            %a{ href: "mailto:#{@resume_json['basics']['email']}" }
+              %img.vector{ src: "#{assets_base_path}style/vectors/email.svg", alt: "Email" }
 
       .row
         .col
