@@ -1,14 +1,26 @@
 .profile-picture {
   height: 120px; }
 
-.icons img {
-  max-height: 1.6rem;
-  max-width: 1.6rem; }
 .icons a:hover {
   text-decoration: none; }
 
 .ruby-icon {
   width: 2rem;
   height: 2rem; }
+
+.row.stike-through:after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  top: 24%;
+  border-bottom: 1px solid #0c7b93;
+  z-index: -1; }
+.row.stike-through strong {
+  line-height: 2.2; }
+
+.work-experiences-container .vector {
+  max-height: 1rem;
+  max-width: 1rem; }
 
 /*# sourceMappingURL=resume.css.map */

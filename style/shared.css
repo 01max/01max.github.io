@@ -21,4 +21,11 @@ h1, h2 {
 hr {
   border-color: #0c7b93; }
 
+.forced-background {
+  background: #142850; }
+
+.vector {
+  max-height: 1.6rem;
+  max-width: 1.6rem; }
+
 /*# sourceMappingURL=shared.css.map */

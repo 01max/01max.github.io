@@ -4,7 +4,7 @@
 - assets_base_path = "../../"
 - bin_base_path = "resume/#{language}"
 - @resume_json = ::JSON.parse(File.read("#{bin_base_path}/resume.json"))
-- @sections_json = ::JSON.parse(File.read("#{bin_base_path}/sections.json"))
+- @i18n_json = ::JSON.parse(File.read("#{bin_base_path}/i18n.json"))
 
 !!! 5
 %html
@@ -38,10 +38,10 @@
         .col.text-right.icons
           - @resume_json['basics']['profiles'].each do |profile|
             %a{ href: profile['url'], target: :_blank }
-              %img{ src: "#{assets_base_path}style/vectors/#{profile['network'].downcase}.svg", alt: profile['network'] }
+              %img.vector{ src: "#{assets_base_path}style/vectors/#{profile['network'].downcase}.svg", alt: profile['network'] }
 
           %a{ href: "mailto:#{@resume_json['basics']['email']}" }
-            %img{ src: "#{assets_base_path}style/vectors/email.svg", alt: "Email" }
+            %img.vector{ src: "#{assets_base_path}style/vectors/email.svg", alt: "Email" }
 
       .row
         .col
@@ -56,5 +56,24 @@
           %hr
 
       .row.mt-5.align-items-center
-        .col-10
-          %h3= @sections_json['work']
+        .col
+          %h3= @i18n_json['work']
+
+      - @resume_json['work'].each do |work_xp|
+        .row.mt-3.mb-5.work-experiences-container
+          .col
+            .row.stike-through
+              .col
+                %h4.mb-1
+                  %span.forced-background.pr-1
+                    = work_xp['company']
+                    - if work_xp['website'] && !work_xp['website'].empty?
+                      %a{ href: work_xp['website'], target: :_blank }
+                        %img.vector{ src: "#{assets_base_path}style/vectors/external-link.svg", alt: work_xp['website'] }
+              .col.text-right
+                - start_date = Date.parse(work_xp['startDate']).strftime('%B %Y')
+                - end_date = work_xp['endDate'] ? Date.parse(work_xp['endDate']).strftime('%B %Y') : nil
+                - full_date = end_date ? [start_date, end_date].compact.join(' - ') : "#{@i18n_json['from']} #{start_date}"
+                %strong.forced-background.pl-1= full_date
+
+            %h5= work_xp['position']
