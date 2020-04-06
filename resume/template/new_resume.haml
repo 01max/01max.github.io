@@ -22,6 +22,16 @@
 
   %body
     .container
+      .d-none.d-print-block
+        .row.dont-print-message.mt-3.mb-3.text-center
+          .col.my-auto
+            %img{ src: "#{assets_base_path}style/vectors/earth.svg", alt: "Preserve the environment" }
+          .col.my-auto
+            %p.lead In order to preserve the environment and keep these informations up-to-date, please consider not printing this document, and prefer to consult it online.
+          .col.my-auto
+            %p
+              %img{ src: "#{assets_base_path}style/vectors/qr-code.svg", alt: "01max.github.io" }
+            %p.lead https://01max.github.io
       .row
         .col-12.col-md-8
           %h1.mt-5= @resume_json['basics']['name']
