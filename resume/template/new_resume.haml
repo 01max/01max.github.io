@@ -22,6 +22,7 @@
 
   %body
     .container
+      -# DO_NOT_PRINT DISCLAIMER
       .d-none.d-print-block
         .row.dont-print-message.mt-3.mb-3.text-center
           .col.my-auto
@@ -32,6 +33,8 @@
             %p
               %img{ src: "#{assets_base_path}style/vectors/qr-code.svg", alt: "01max.github.io" }
             %p.lead https://01max.github.io
+
+      -# TITLE
       .row
         .col-12.col-md-8
           %h1.mt-5= @resume_json['basics']['name']
@@ -44,6 +47,7 @@
             .col.text-right
               %img.mr-3.rounded-circle.profile-picture{ src: "#{assets_base_path}#{@resume_json['basics']['picture']}" }
 
+      -# EXTERNAL LINKS
       .row
         .col.mt-3.text-right
           .icons.mr-3.float-right.text-center
@@ -67,6 +71,7 @@
           %hr
 
       .row
+        -# WORK EXPERIENCES
         .col-12.order-2.order-md-1.col-md-8.mb-3.border-right.border-hide-sm
           .row.align-items-center
             .col
@@ -105,9 +110,10 @@
                     %li= work_highlight
 
           .row
-            .col.mt-2
+            .col.mt-2.d-md-none
               %hr
 
+        -# SKILLS
         .col-12.order-1.order-md-2.col-md-4.mb-3.mb-md-5
           .row.align-items-center
             .col
@@ -128,6 +134,7 @@
             .col.mt-2
               %hr
 
+          -# EDUCATION (DESKTOP ONLY)
           .row.align-items-center.d-none.d-md-block
             .col.mt-4
               %h3= @i18n_json['education']
@@ -139,9 +146,11 @@
                   = [education['area'], education['studyType']].compact.join(' - ')
                   = "(#{education['endDate'][0..3]})"
 
+          .row.d-none.d-md-block
             .col.mt-2
               %hr
 
+          -# LANGUAGES (DESKTOP ONLY)
           .row.align-items-center.d-none.d-md-block
             .col.mt-4
               %h3= @i18n_json['languages']
@@ -151,10 +160,24 @@
                 %h5.mb-1= language['language']
                 %h6.ml-1= language['fluency']
 
+          .row.d-none.d-md-block
             .col.mt-2
               %hr
 
+          -# INTERESTS (DESKTOP ONLY)
+          .row.align-items-center.d-none.d-md-block
+            .col.mt-4
+              %h3= @i18n_json['interests']
+
+            - @resume_json['interests'].each do |interest|
+              .col-12.mt-3.ml-1
+                %h5.mb-1= interest['name']
+                - unless interest['keywords'].empty?
+                  %h6.ml-1= interest['keywords'].join(', ')
+
         .col-12.order-3.col-md-4.mb-3.mb-md-5.d-md-none
+
+          -# EDUCATION (MOBILE ONLY)
           .row.align-items-center
             .col
               %h3= @i18n_json['education']
@@ -171,6 +194,7 @@
             .col.mt-2
               %hr
 
+          -# LANGUAGES (MOBILE ONLY)
           .row.align-items-center
             .col.mt-4
               %h3= @i18n_json['languages']
@@ -184,3 +208,15 @@
           .row
             .col.mt-2
               %hr
+
+          -# INTERESTS (MOBILE ONLY)
+          .row.align-items-center
+            .col.mt-4
+              %h3= @i18n_json['interests']
+
+          .row
+            - @resume_json['interests'].each do |interest|
+              .col-12.mt-3.ml-1
+                %h5.mb-1= interest['name']
+                - unless interest['keywords'].empty?
+                  %h6.ml-1= interest['keywords'].join(', ')
