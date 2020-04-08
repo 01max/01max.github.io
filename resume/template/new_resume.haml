@@ -67,7 +67,7 @@
           %hr
 
       .row
-        .col-12.order-2.order-md-1.col-md-8.mb-5.border-right.border-hide-sm
+        .col-12.order-2.order-md-1.col-md-8.mb-3.border-right.border-hide-sm
           .row.align-items-center
             .col
               %h3= @i18n_json['work']
@@ -104,6 +104,9 @@
                   - work_xp['highlights'].each do |work_highlight|
                     %li= work_highlight
 
+          .row
+            .col.mt-2
+              %hr
 
         .col-12.order-1.order-md-2.col-md-4.mb-3.mb-md-5
           .row.align-items-center
@@ -120,6 +123,35 @@
                     %ul.mb-1.skills
                       - skill_collection['keywords'].each do |skill|
                         %li= skill
+
+          .row
+            .col.mt-2
+              %hr
+
+          .row.align-items-center.d-none.d-md-block
+            .col.mt-4
+              %h3= @i18n_json['education']
+
+          .row
+            - @resume_json['education'].each do |education|
+              .col-12.mt-3.ml-1
+                %h5.mb-0= education['institution']
+                %h6.ml-1= [education['area'], education['studyType']].compact.join(' - ')
+
+          .row
+            .col.mt-2
+              %hr
+
+        .col-12.order-3.col-md-4.mb-3.mb-md-5.d-md-none
+          .row.align-items-center
+            .col
+              %h3= @i18n_json['education']
+
+          .row
+            - @resume_json['education'].each do |education|
+              .col-12.mt-3.ml-1
+                %h5.mb-0= education['institution']
+                %h6.ml-1= [education['area'], education['studyType']].compact.join(' - ')
 
           .row
             .col.mt-2
