@@ -135,8 +135,24 @@
           .row
             - @resume_json['education'].each do |education|
               .col-12.mt-3.ml-1
-                %h5.mb-0= education['institution']
-                %h6.ml-1= [education['area'], education['studyType']].compact.join(' - ')
+                %h5.mb-1= education['institution']
+                %h6.ml-1
+                  = [education['area'], education['studyType']].compact.join(' - ')
+                  = "(#{education['endDate'][0..3]})"
+
+          .row
+            .col.mt-2
+              %hr
+
+          .row.align-items-center.d-none.d-md-block
+            .col.mt-4
+              %h3= @i18n_json['languages']
+
+          .row
+            - @resume_json['languages'].each do |language|
+              .col-12.mt-3.ml-1
+                %h5.mb-1= language['language']
+                %h6.ml-1= language['fluency']
 
           .row
             .col.mt-2
@@ -150,8 +166,24 @@
           .row
             - @resume_json['education'].each do |education|
               .col-12.mt-3.ml-1
-                %h5.mb-0= education['institution']
-                %h6.ml-1= [education['area'], education['studyType']].compact.join(' - ')
+                %h5.mb-1= education['institution']
+                %h6.ml-1
+                  = [education['area'], education['studyType']].compact.join(' - ')
+                  = "(#{education['endDate'][0..3]})"
+
+          .row
+            .col.mt-2
+              %hr
+
+          .row.align-items-center.d-none.d-md-block
+            .col.mt-4
+              %h3= @i18n_json['languages']
+
+          .row
+            - @resume_json['languages'].each do |language|
+              .col-12.mt-3.ml-1
+                %h5.mb-1= language['language']
+                %h6.ml-1= language['fluency']
 
           .row
             .col.mt-2
