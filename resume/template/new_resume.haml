@@ -24,7 +24,7 @@
     .container
       -# DO_NOT_PRINT DISCLAIMER
       .d-none.d-print-block
-        .row.dont-print-message.mt-3.mb-3.text-center
+        .row.dont-print-message.text-center
           .col.my-auto
             %img{ src: "#{assets_base_path}style/vectors/earth.svg", alt: "Preserve the environment" }
           .col.my-auto
@@ -72,7 +72,7 @@
 
       .row
         -# WORK EXPERIENCES
-        .col-12.order-2.order-md-1.col-md-8.mb-3.border-right.border-hide-sm
+        .col-12.order-2.order-md-1.col-md-8.mb-3.mb-md-1.border-right.border-hide-sm
           .row.align-items-center
             .col
               %h3= @i18n_json['work']
