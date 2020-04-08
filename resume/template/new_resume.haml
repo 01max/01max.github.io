@@ -44,8 +44,8 @@
             .col.text-right
               %img.mr-3.rounded-circle.profile-picture{ src: "#{assets_base_path}#{@resume_json['basics']['picture']}" }
 
-      .row.mt-3
-        .col.text-right
+      .row
+        .col.mt-3.text-right
           .icons.mr-3.float-right.text-center
             - @resume_json['basics']['profiles'].each do |profile|
               %a{ href: profile['url'], target: :_blank }
@@ -55,7 +55,7 @@
               %img.vector{ src: "#{assets_base_path}style/vectors/email.svg", alt: "Email" }
 
       .row
-        .col
+        .col.mt-3
           %hr
 
       .row.justify-content-center
@@ -63,11 +63,11 @@
           %p.lead.mb-0= @resume_json['basics']['summary']
 
       .row
-        .col.mb-5
+        .col.mb-3.mb-md-5
           %hr
 
       .row
-        .col-12.col-md-8.mb-5.border-right.border-hide-sm
+        .col-12.order-2.order-md-1.col-md-8.mb-5.border-right.border-hide-sm
           .row.align-items-center
             .col
               %h3= @i18n_json['work']
@@ -105,18 +105,22 @@
                     %li= work_highlight
 
 
-        .col-12.col-md-4.mb-5
+        .col-12.order-1.order-md-2.col-md-4.mb-3.mb-md-5
           .row.align-items-center
             .col
               %h3= @i18n_json['skills']
 
-          - @resume_json['skills'].each do |skill_collection|
-            .row.mt-3.ml-1
-              .col
-                %h5= skill_collection['name']
+          .row
+            - @resume_json['skills'].each do |skill_collection|
+              .col.mt-3
+                %h5.ml-1.mb-0= skill_collection['name']
 
-            .row.mt-2.ml-1
-              .col
-                %ul
-                  - skill_collection['keywords'].each do |skill|
-                    %li= skill
+                .row.mt-2
+                  .col
+                    %ul.mb-1.skills
+                      - skill_collection['keywords'].each do |skill|
+                        %li= skill
+
+          .row
+            .col.mt-2
+              %hr
