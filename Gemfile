@@ -6,3 +6,5 @@ ruby '3.4.4'
 gem 'haml'
 gem 'sass'
 gem 'sinatra'
+
+gem 'json'

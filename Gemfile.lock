@@ -17,6 +17,7 @@ GEM
       temple (>= 0.8.2)
       thor
       tilt
+    json (2.15.1)
     logger (1.7.0)
     mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
@@ -63,6 +64,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  json
   sass
   sinatra
 
