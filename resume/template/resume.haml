@@ -15,208 +15,97 @@
 
     %link{ rel: :stylesheet, type: "text/css", href: "#{assets_base_path}style/shared.css" }
     %link{ rel: :stylesheet, type: "text/css", href: "#{assets_base_path}style/resume.css" }
-
-    %link{ rel: :icon, href: "#{assets_base_path}style/favicon/favicon.ico" }
-    %link{ rel: :icon, href: "#{assets_base_path}style/favicon/favicon-32x32.png", sizes: "32x32" }
-    %link{ rel: :icon, href: "#{assets_base_path}style/favicon/favicon-16x16.png", sizes: "16x16" }
-
   %body
-    .container
-      -# DO_NOT_PRINT DISCLAIMER
-      .d-none.d-print-block
-        .row.dont-print-message.text-center
-          .col.my-auto
-            %img{ src: "#{assets_base_path}style/vectors/earth.svg", alt: "Preserve the environment" }
-          .col.my-auto
-            %p.lead In order to preserve the environment and keep these informations up-to-date, please consider not printing this document, and prefer to consult it online.
-          .col.my-auto
-            %p
-              %img{ src: "#{assets_base_path}style/vectors/qr-code.svg", alt: "01max.github.io" }
-            %p.lead https://01max.github.io
-
+    %main
       -# TITLE
-      .row
-        .col-12.col-md-8
-          %h1.mt-5= @resume_json['basics']['name']
-          %h2
-            = @resume_json['basics']['label']
-            %img.ruby-icon{ src: "#{assets_base_path}style/vectors/ruby.svg", alt: "Ruby" }
-
-        .col.d-none.d-md-block
-          .row.h-100.align-items-end
-            .col.text-right
-              %img.mr-3.rounded-circle.profile-picture{ src: "#{assets_base_path}#{@resume_json['basics']['picture']}" }
+      %header.title
+        %h1= @resume_json['basics']['name']
+        %h2
+          = @resume_json['basics']['label']
+        %img.profile-picture{ src: "#{assets_base_path}#{@resume_json['basics']['picture']}" }
 
       -# EXTERNAL LINKS
-      .row
-        .col.mt-3.text-right
-          .icons.mr-3.float-right.text-center
-            - @resume_json['basics']['profiles'].each do |profile|
+      %nav.external-links
+        %ul
+          - @resume_json['basics']['profiles'].each do |profile|
+            %li
               %a{ href: profile['url'], target: :_blank }
-                %img.vector{ src: "#{assets_base_path}style/vectors/#{profile['network'].downcase}.svg", alt: profile['network'] }
-
+                = profile['network'].downcase
+          %li
             %a{ href: "mailto:#{@resume_json['basics']['email']}" }
-              %img.vector{ src: "#{assets_base_path}style/vectors/email.svg", alt: "Email" }
+              email
 
-      .row
-        .col.mt-3
-          %hr
+      %hr
 
-      .row.justify-content-center
-        .col
-          %p.lead.mb-0= @resume_json['basics']['summary']
+      %section.summary
+        %p= @resume_json['basics']['summary']
 
-      .row
-        .col.mb-3.mb-md-5
-          %hr
+      %hr
 
-      .row
-        -# WORK EXPERIENCES
-        .col-12.order-2.order-md-1.col-md-8.mb-3.mb-md-1.border-right.border-hide-sm
-          .row.align-items-center
-            .col
-              %h3= @i18n_json['work']
+      %section.main-content
+        %section.work-experiences
+          %h3= @i18n_json['work']
 
           - @resume_json['work'].each do |work_xp|
-            .row.mt-3.work-experience-title-container
-              .col
-                .row.stike-through
-                  .col
-                    %h4.mb-1
-                      %span.forced-background.pr-1
-                        = work_xp['company']
-                        - if work_xp['website'] && !work_xp['website'].empty?
-                          %a{ href: work_xp['website'], target: :_blank }
-                            %img.vector{ src: "#{assets_base_path}style/vectors/external-link.svg", alt: work_xp['website'] }
-                  .col.text-right
-                    - start_date = Date.parse(work_xp['startDate']).strftime('%B %Y')
-                    - end_date = work_xp['endDate'] ? Date.parse(work_xp['endDate']).strftime('%B %Y') : nil
-                    - full_date = end_date ? [start_date, end_date].compact.join(' - ') : "#{@i18n_json['from']} #{start_date}"
-                    %strong.forced-background.pl-1= full_date
-
+            %article.work-experience
+              %header
+                %h4
+                  %span.company= work_xp['company']
+                  - if work_xp['website'] && !work_xp['website'].empty?
+                    %a{ href: work_xp['website'], target: :_blank }
+                      = work_xp['website']
+                %div.dates
+                  - start_date = Date.parse(work_xp['startDate']).strftime('%B %Y')
+                  - end_date = work_xp['endDate'] ? Date.parse(work_xp['endDate']).strftime('%B %Y') : nil
+                  - full_date = end_date ? [start_date, end_date].compact.join(' - ') : "#{@i18n_json['from']} #{start_date}"
+                  %strong= full_date
                 %h5= work_xp['position']
 
-            .row.m-3
-              .col
-                - unless work_xp['summary'].empty?
-                  .alert.alt-background.p-2
-                    %strong= work_xp['summary']
+              - unless work_xp['summary'].empty?
+                %p.work-summary
+                  %strong= work_xp['summary']
 
-            .row.mb-5.ml-4.mr-4
-              .col
-                %h5= @i18n_json['highlights']
-                %ul
-                  - work_xp['highlights'].each do |work_highlight|
-                    %li= work_highlight
+              %h5= @i18n_json['highlights']
+              %ul
+                - work_xp['highlights'].each do |work_highlight|
+                  %li= work_highlight
 
-          .row
-            .col.mt-2.d-md-none
-              %hr
+        %section.sidebar
+          %section.skills
+            %h3= @i18n_json['skills']
 
-        -# SKILLS
-        .col-12.order-1.order-md-2.col-md-4.mb-3.mb-md-5
-          .row.align-items-center
-            .col
-              %h3= @i18n_json['skills']
-
-          .row
             - @resume_json['skills'].each do |skill_collection|
-              .col.mt-3
-                %h5.ml-1.mb-0= skill_collection['name']
+              %div.skill-group
+                %h5= skill_collection['name']
+                %ul.skills
+                  - skill_collection['keywords'].each do |skill|
+                    %li= skill
 
-                .row.mt-2
-                  .col
-                    %ul.mb-1.skills
-                      - skill_collection['keywords'].each do |skill|
-                        %li= skill
+            %hr
 
-          .row
-            .col.mt-2
-              %hr
-
-          -# EDUCATION (DESKTOP ONLY)
-          .row.align-items-center.d-none.d-md-block
-            .col.mt-4
-              %h3= @i18n_json['education']
-
+          %section.education
+            %h3= @i18n_json['education']
             - @resume_json['education'].each do |education|
-              .col-12.mt-3.ml-1
-                %h5.mb-1= education['institution']
-                %h6.ml-1
-                  = [education['area'], education['studyType']].compact.join(' - ')
-                  = "(#{education['endDate'][0..3]})"
+              %div.education-item
+                %h5= education['institution']
+                %h6= [education['area'], education['studyType']].compact.join(' - ')
+                = "(#{education['endDate'][0..3]})"
 
-          .row.d-none.d-md-block
-            .col.mt-2
-              %hr
+            %hr
 
-          -# LANGUAGES (DESKTOP ONLY)
-          .row.align-items-center.d-none.d-md-block
-            .col.mt-4
-              %h3= @i18n_json['languages']
-
+          %section.languages
+            %h3= @i18n_json['languages']
             - @resume_json['languages'].each do |language|
-              .col-12.mt-3.ml-1
-                %h5.mb-1= language['language']
-                %h6.ml-1= language['fluency']
+              %div.language-item
+                %h5= language['language']
+                %h6= language['fluency']
 
-          .row.d-none.d-md-block
-            .col.mt-2
-              %hr
+            %hr
 
-          -# INTERESTS (DESKTOP ONLY)
-          .row.align-items-center.d-none.d-md-block
-            .col.mt-4
-              %h3= @i18n_json['interests']
-
+          %section.interests
+            %h3= @i18n_json['interests']
             - @resume_json['interests'].each do |interest|
-              .col-12.mt-3.ml-1
-                %h5.mb-1= interest['name']
+              %div.interest-item
+                %h5= interest['name']
                 - unless interest['keywords'].empty?
-                  %h6.ml-1= interest['keywords'].join(', ')
-
-        .col-12.order-3.col-md-4.mb-3.mb-md-5.d-md-none
-
-          -# EDUCATION (MOBILE ONLY)
-          .row.align-items-center
-            .col
-              %h3= @i18n_json['education']
-
-          .row
-            - @resume_json['education'].each do |education|
-              .col-12.mt-3.ml-1
-                %h5.mb-1= education['institution']
-                %h6.ml-1
-                  = [education['area'], education['studyType']].compact.join(' - ')
-                  = "(#{education['endDate'][0..3]})"
-
-          .row
-            .col.mt-2
-              %hr
-
-          -# LANGUAGES (MOBILE ONLY)
-          .row.align-items-center
-            .col.mt-4
-              %h3= @i18n_json['languages']
-
-          .row
-            - @resume_json['languages'].each do |language|
-              .col-12.mt-3.ml-1
-                %h5.mb-1= language['language']
-                %h6.ml-1= language['fluency']
-
-          .row
-            .col.mt-2
-              %hr
-
-          -# INTERESTS (MOBILE ONLY)
-          .row.align-items-center
-            .col.mt-4
-              %h3= @i18n_json['interests']
-
-          .row
-            - @resume_json['interests'].each do |interest|
-              .col-12.mt-3.ml-1
-                %h5.mb-1= interest['name']
-                - unless interest['keywords'].empty?
-                  %h6.ml-1= interest['keywords'].join(', ')
+                  %h6= interest['keywords'].join(', ')

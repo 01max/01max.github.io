@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAGE,uBAAG;EACD,MAAM,EAAE,KAAK;;AAEjB,gBAAgB;EACd,MAAM,EAAE,KAAK;;AAEf,MAAM;EACJ,KAAK,EAAE,KAAK;EAEZ,cAAO;IACL,eAAe,EAAE,IAAI;;AAEzB,UAAU;EACR,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;;AAGZ,wCAAO;EACL,UAAU,EAAE,IAAI;EAChB,SAAS,EAAE,IAAI;;AAGjB,YAAE;EACA,WAAW,EAAE,GAAG",
-"sources": ["resume.sass"],
+"mappings": "",
+"sources": [],
 "names": [],
 "file": "resume.css"
 }

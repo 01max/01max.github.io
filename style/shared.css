@@ -1,61 +1,19 @@
-@import url(./fonts/fonts.css);
-@import url(./bootstrap.min.css);
 html {
   height: 100% !important; }
 
 body {
-  font-family: "Poppins", sans-serif;
-  color: #e8f1f5;
-  background: #142850; }
-  body.full-page {
-    background: radial-gradient(circle, #1f4369 0%, #142850 100%); }
+  color: #142850;
+  background: #e8f1f5; }
 
 a {
-  color: #ffde25; }
+  color: #ffd400; }
   a:hover {
-    color: #ffd400; }
+    color: #ffde25; }
 
 h1, h2, h3 {
   font-weight: bold; }
 
-hr, .border, .border-top, .border-right, .border-bottom, .border-left {
+hr {
   border-color: #1f4369 !important; }
-
-.row.stike-through:after {
-  content: "";
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  top: 24%;
-  border-bottom: 1px solid #0c7b93;
-  z-index: -1; }
-.row.stike-through strong {
-  line-height: 2.2; }
-
-@media (max-width: 768px) {
-  .border-hide-sm {
-    border: none !important; } }
-.forced-background {
-  background: #142850; }
-
-.alt-background {
-  background: #1f4369; }
-
-.vector {
-  max-height: 1.6rem;
-  max-width: 1.6rem; }
-
-@media print {
-  body {
-    color: #142850 !important;
-    background: #000000 !important;
-    font-weight: 400 !important;
-    line-height: 1.3 !important; }
-
-  .mb-5.mb-md-5 {
-    margin-bottom: 1rem !important; }
-
-  .mb-3.mb-md-3 {
-    margin-bottom: 0.7rem !important; } }
 
 /*# sourceMappingURL=shared.css.map */
