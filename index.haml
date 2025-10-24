@@ -6,21 +6,14 @@
     %title Hi
     %meta{ "http-equiv" => "X-UA-Compatible", content: "IE=edge" }
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1" }
-
-    %link{ rel: :stylesheet, type: "text/css", href: "#{root_path}style/shared.css" }
-
-    %link{ rel: :icon, href: "#{root_path}style/favicon/favicon.ico" }
-    %link{ rel: :icon, href: "#{root_path}style/favicon/favicon-32x32.png", sizes: "32x32" }
-    %link{ rel: :icon, href: "#{root_path}style/favicon/favicon-16x16.png", sizes: "16x16" }
-
-  %body.full-page.h-100
-    .container.h-100
-      .row.h-100.align-items-center
-        .col
-          %h1 Hi, I'm Maxime
-          %h2.mt-4.mb-4.m-sm-0 I have been a Software Engineer for the past 9 years
-          %p.lead
-            While you are here, you can checkout
-            %a{ href: 'resume/fr/' } my resume
-            and my
-            %a{ href: 'https://github.com/01max' } github profile
+  %body
+    %main
+      %header
+        %h1 Hi, I'm Maxime
+        %h2 I have been a Software Engineer for the past 9 years
+      %section
+        %p
+          While you are here, you can checkout
+          %a{ href: 'resume/fr/' } my resume
+          and my
+          %a{ href: 'https://github.com/01max' } github profile
